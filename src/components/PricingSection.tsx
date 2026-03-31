@@ -107,15 +107,30 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <button
-                className={`w-full py-3.5 rounded-lg font-display text-sm font-semibold tracking-wider uppercase transition-all duration-300 ${
-                  plan.popular
-                    ? "btn-glow text-primary-foreground"
-                    : "glass text-foreground hover:border-primary/40"
-                }`}
-              >
-                {plan.price === "Custom" ? "Konsultasi Gratis" : "Pesan Sekarang"}
-              </button>
+              {plan.price === "Custom" ? (
+                <button
+                  className={`w-full py-3.5 rounded-lg font-display text-sm font-semibold tracking-wider uppercase transition-all duration-300 ${
+                    plan.popular
+                      ? "btn-glow text-primary-foreground"
+                      : "glass text-foreground hover:border-primary/40"
+                  }`}
+                >
+                  Konsultasi Gratis
+                </button>
+              ) : (
+                <a
+                  href="https://mujaer-tech.myscalev.com/p/drone-under-water"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block text-center w-full py-3.5 rounded-lg font-display text-sm font-semibold tracking-wider uppercase transition-all duration-300 ${
+                    plan.popular
+                      ? "btn-glow text-primary-foreground"
+                      : "glass text-foreground hover:border-primary/40"
+                  }`}
+                >
+                  Pesan Sekarang
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

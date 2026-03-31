@@ -29,7 +29,7 @@ const HeroSection = () => {
             Hemat waktu, hemat biaya, hasil akurat.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#pricing" className="btn-glow px-8 py-4 rounded-lg font-display text-sm font-semibold text-primary-foreground tracking-wider uppercase">
+            <a href="https://mujaer-tech.myscalev.com/p/drone-under-water" target="_blank" rel="noopener noreferrer" className="btn-glow px-8 py-4 rounded-lg font-display text-sm font-semibold text-primary-foreground tracking-wider uppercase">
               Pesan Sekarang
             </a>
             <a href="#features" className="glass px-8 py-4 rounded-lg font-display text-sm font-semibold text-foreground tracking-wider uppercase hover:border-primary/40 transition-all duration-300">
